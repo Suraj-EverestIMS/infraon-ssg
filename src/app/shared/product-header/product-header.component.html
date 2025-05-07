@@ -1,0 +1,122 @@
+<section class="bg-whiteSmoke py-3" style="box-shadow: inset 0 -1px 0 #e4e4e4;">
+    <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+            <a routerLink="/infraon-infinity" routerLinkActive="active" ariaCurrentWhenActive="page" class="flex items-center gap-3">
+                <img [src]="productIcon" alt="{{ productName }}">
+                <p class="text-sm font-semibold text-gray-900">{{ productName }}</p>
+            </a>
+            <div>
+                <ul class="flex items-center gap-3">
+                    <li class="px-3">
+                        <a routerLink="/contact-us" routerLinkActive="active" ariaCurrentWhenActive="page" class="py-2 text-sm font-semibold text-gray-900">Home</a>
+                    </li>
+                    
+                    <li *ngIf="hasExtraFeatures" class="px-3">
+                        <a routerLink="/asset-management-software/features/it-assets-management-solutions" routerLinkActive="active" ariaCurrentWhenActive="page" class="py-2 text-sm font-semibold text-gray-900">ITAM</a>
+                    </li>
+                    
+                    <li *ngIf="hasExtraFeatures" class="px-3">
+                        <a routerLink="/asset-management-software/features/hardware-assets-management-solutions" routerLinkActive="active" ariaCurrentWhenActive="page" class="py-2 text-sm font-semibold text-gray-900">HAM</a>
+                    </li>
+                    
+                    <li *ngIf="hasExtraFeatures" class="px-3">
+                        <a routerLink="/asset-management-software/features/software-assets-management-solutions" routerLinkActive="active" ariaCurrentWhenActive="page" class="py-2 text-sm font-semibold text-gray-900">SAM</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+                    <li *ngIf="hasFeatures" class="relative group text-sm/6 font-semibold text-gray-900 px-3">
+                        <button class="text-gray-800 font-semibold hover:text-blue-600 transition inline-flex w-full justify-center items-center gap-x-1.5">
+                            Features
+                          
+                          <svg class="-mr-1 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+                
+                        <div class="feature-dropdown-wrapper">
+                            <div class="feature-dropdown absolute flex justify-between top-full mt-2 py-2 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform group-hover:translate-y-0 -translate-y-2" >
+                                <ul class="flex flex-col gap-3 p-4 border-r">
+                                    <p class="text-gray-800 font-bold text-sm">Core Features</p>
+                                    <li *ngFor="let feature of corefeatures" class="font-normal hover:bg-blue-100 px-2 py-1">
+                                        <a [routerLink]="feature.route">
+                                            {{ feature.title }}
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="flex flex-col gap-3 p-4">
+                                    <p class="text-gray-800 font-bold text-sm">Add ons</p>
+                                    <li *ngFor="let feature of addOnfeatures" class="font-normal hover:bg-blue-100 px-2 py-1">
+                                        <a [routerLink]="feature.route">
+                                            {{ feature.title }}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+                    
+                    
+                    
+
+
+
+                    <li *ngIf="hasSolutions" class="relative group text-sm/6 font-semibold text-gray-900 px-3">
+                        <button class="text-gray-800 font-semibold hover:text-blue-600 transition inline-flex w-full justify-center items-center gap-x-1.5">
+                            Solutions
+                          
+                          <svg class="-mr-1 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+                
+                        <div class="feature-dropdown-wrapper">
+                            <div class="feature-dropdown absolute flex justify-between top-full mt-2 py-2 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform group-hover:translate-y-0 -translate-y-2" >
+                                <ul class="flex flex-col gap-3 p-4 border-r">
+                                    <li *ngFor="let feature of solutionfeatures" class="font-normal hover:bg-blue-100 px-2 py-1">
+                                        <a [routerLink]="feature.route">
+                                            {{ feature.title }}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <li *ngIf="hasPricing" class="px-3">
+                        <a routerLink="/prices" routerLinkActive="active" ariaCurrentWhenActive="page" class="py-2 text-sm font-semibold text-gray-900">Pricing</a>
+                    </li>
+                    <li class="px-3">
+                        <a routerLink="/resources" routerLinkActive="active" ariaCurrentWhenActive="page" class="py-2 text-sm font-semibold text-gray-900">Resources</a>
+                    </li>
+                    <li class="px-3">
+                        <a routerLink="/support" routerLinkActive="active" ariaCurrentWhenActive="page" class="py-2 text-sm font-semibold text-gray-900">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

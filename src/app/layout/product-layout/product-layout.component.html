@@ -1,0 +1,19 @@
+<app-product-header 
+    [productName]="productName" 
+    [productIcon]="productIcon" 
+    [hasPricing]="hasPricing"
+    [hasFeatures]="hasFeatures"
+    [hasSolutions]="hasSolutions"
+    [hasExtraFeatures]="hasExtraFeatures"
+>
+</app-product-header>
+
+<app-breadcrumb></app-breadcrumb>
+
+<div class="flex flex-col">
+    <main class="flex-grow">
+        <router-outlet></router-outlet>
+    </main>
+    
+    <app-footer></app-footer>
+</div>  

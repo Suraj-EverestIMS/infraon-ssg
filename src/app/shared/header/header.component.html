@@ -1,0 +1,233 @@
+<header class="relative inset-x-0 top-0 z-50" style="box-shadow: 1px 3px 4px 0 #adadad33;">
+  <nav class="flex items-center justify-between p-2 lg:px-8" aria-label="Global">
+    <div class="flex lg:flex-1">
+      <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" class="-m-1.5 p-1.5">
+        <span class="sr-only">Your Company</span>
+        <img class="h-8 w-auto" src="https://infraon.io/assets/img/infinity-logos/web-logo/infraon_logo_small.svg" alt="">
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <span class="sr-only">Open main menu</span>
+        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+
+
+    <nav class="relative z-50 hidden lg:flex lg:gap-x-12">
+        <ul class="flex space-x-6">
+            <li class="relative group text-sm/6 font-semibold text-gray-900">
+                <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-sm/6 font-semibold text-gray-900">Home</a>
+            </li>
+
+            <li class="relative group text-sm/6 font-semibold text-gray-900">
+              <a routerLink="/infraon-infinity" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-sm/6 font-semibold text-gray-900">Platform</a>
+            </li>
+
+            <li class="relative group text-sm/6 font-semibold text-gray-900">
+                <button class="text-gray-800 font-semibold hover:text-blue-600 transition inline-flex w-full justify-center items-center gap-x-1.5">
+                  Products
+                  
+                  <svg class="-mr-1 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+        
+                <!-- Mega Menu -->
+                <div class="mega-menu absolute top-full mt-2 bg-white shadow-lg p-6 grid grid-cols-3 gap-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform group-hover:translate-y-0 -translate-y-2">
+                    <div>
+                        <h3 class="font-bold mb-2">ITOM - IT OPERATIONS MANAGEMENT</h3>
+                        <ul class="space-y-1 text-sm text-gray-600">
+                            <li>
+                              <a routerLink="/asset-management-software" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Assets</a>
+                            </li>
+                            <li>
+                              <a routerLink="/infraon-nms" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">NMS</a>
+                            </li>
+                            <li>
+                              <a routerLink="/infraon-aiops" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">AIOPS</a>
+                            </li>
+                            <li>
+                              <a routerLink="/infraon-itim" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">ITIM/IMS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-1 text-sm text-gray-600">
+                          <li>
+                            <a routerLink="/infraon-nccm" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">NCCM</a>
+                          </li>
+                        </ul>
+
+                        <h3 class="font-bold mb-2">CUSTOMER SUCCESS</h3>
+                        <ul class="space-y-1 text-sm text-gray-600">
+                          <li>
+                            <a routerLink="/itsm-software" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">ITSM</a>
+                          </li>
+                        </ul>
+                        
+                        <h3 class="font-bold mb-2">TELECOM</h3>
+                        <ul class="space-y-1 text-sm text-gray-600">
+                            <li>
+                              <a routerLink="/infraon-oss" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">OSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">ALL-in-one platform</h3>
+                        <ul class="space-y-1 text-sm text-gray-600">
+                            <li>
+                              <a routerLink="/infraon-infinity" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Infraon Infinity</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+          
+            <li class="relative group text-sm/6 font-semibold text-gray-900">
+                <button class="text-gray-800 font-semibold hover:text-blue-600 transition inline-flex w-full justify-center items-center gap-x-1.5">
+                  Resources
+                  
+                  <svg class="-mr-1 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+        
+                <!-- Mega Menu -->
+                <div class="mega-menu absolute top-full mt-2 bg-white shadow-lg p-6 grid grid-cols-3 gap-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform group-hover:translate-y-0 -translate-y-2" >
+                    <div>
+                        <h3 class="font-bold mb-2">Resources 1</h3>
+                    </div>
+                    <div>
+                        <ul class="space-y-1 text-sm text-gray-600">
+                            <li>
+                              <a routerLink="/resources/brochure" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Brochures</a>
+                            </li>
+                            <li>
+                              <a routerLink="/resources/presentation" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Presentation</a>
+                            </li>
+                            <li>
+                              <a routerLink="/resources/case-study" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Case Studies</a>
+                            </li>
+                            <li>
+                              <a routerLink="/resources/videos" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Videos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Resources 3</h3>
+                        <ul class="space-y-1 text-sm text-gray-600">
+                            <li>
+                              <a routerLink="/resources/webinar" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Webinar</a>
+                            </li>
+                            <li>
+                              <a routerLink="/resources/press-and-media" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Press and Media</a>
+                            </li>
+                            <li>
+                              <a routerLink="/resources/whitepapers" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Whitepapers</a>
+                            </li>
+                            <li>
+                              <a routerLink="/resources/free-resources" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Free Rsources</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="relative group text-sm/6 font-semibold text-gray-900">
+                <button class="text-gray-800 font-semibold hover:text-blue-600 transition inline-flex w-full justify-center items-center gap-x-1.5">
+                  Company
+                  
+                  <svg class="-mr-1 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+        
+                <!-- Mega Menu -->
+                <div class="mega-menu absolute top-full mt-2 bg-white shadow-lg p-6 grid grid-cols-3 gap-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform group-hover:translate-y-0 -translate-y-2" >
+                    <div>
+                        <h3 class="font-bold mb-2">Company 1</h3>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Company 2</h3>
+                        <ul class="space-y-1 text-sm text-gray-600">
+                            <li>
+                              <a routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">About us</a>
+                            </li>
+                            <li>
+                              <a routerLink="/our-partner" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Our Partners</a>
+                            </li>
+                            <li>
+                              <a routerLink="/partner-program" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Partner Program</a>
+                            </li>
+                            <li>
+                              <a routerLink="/support" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Support</a>
+                            </li>
+                            <li>
+                              <a routerLink="/events" routerLinkActive="active" ariaCurrentWhenActive="page" class="hover:text-blue-600">Events</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Infraon Docs</h3>
+                    </div>
+                </div>
+            </li>
+
+            <li class="relative group text-sm/6 font-semibold text-gray-900">
+                <a routerLink="/contact-us" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-sm/6 font-semibold text-gray-900">Contact us</a>
+            </li>
+
+            <li class="relative group text-sm/6 font-semibold text-gray-900">
+                <a href="#" class="text-sm/6 font-semibold text-gray-900">Blog</a>
+            </li>
+        </ul>
+    </nav>
+    
+      
+
+
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-6">
+        <a href="#" class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white hover:shadow-xs">Start free trial</a>
+        <a href="#" class="rounded-md bg-skyTint px-3.5 py-2.5 text-sm font-semibold text-primary hover:shadow-xs">Book a demo</a>
+    </div>
+  </nav>
+  <!-- Mobile menu, show/hide based on menu open state. -->
+  <div class="lg:hidden" role="dialog" aria-modal="true">
+    <!-- Background backdrop, show/hide based on slide-over state. -->
+    <div class="fixed inset-0 z-50"></div>
+    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div class="flex items-center justify-between">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
+        </a>
+        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Close menu</span>
+          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="space-y-2 py-6">
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Platform</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Products</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Resources</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact us</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Blog</a>
+          </div>
+          <div class="py-6">
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Start free trial</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Book a demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

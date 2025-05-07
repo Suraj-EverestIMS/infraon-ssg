@@ -1,0 +1,12 @@
+<nav class="breadcrumb container mx-auto py-4">
+    <ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last">
+        <ng-container *ngIf="!last">
+            <a class="breadcrumbs-link" [routerLink]="breadcrumb.url">{{ breadcrumb.label }}</a>
+            <span class="separator breadcrumbs-link"> / </span>
+        </ng-container>
+        <ng-container *ngIf="last">
+            <span class="breadcrumbs-link current">{{ breadcrumb.label }}</span>
+        </ng-container>
+    </ng-container>
+</nav>
+  

@@ -1,0 +1,12 @@
+<div class="email-input-wrapper">
+  <input
+    type="email"
+    [placeholder]="placeholder"
+    [value]="value"
+    (input)="onInput($event)"
+    (blur)="onBlur()"
+    [disabled]="disabled"
+    [ngClass]="inputClass"
+    class="border"
+  />
+</div>  
