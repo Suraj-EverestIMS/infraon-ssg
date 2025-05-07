@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "infraon-website:build:production"
+              "buildTarget": "infraon-website:build:production"
             },
             "development": {
-              "browserTarget": "infraon-website:build:development"
+              "buildTarget": "infraon-website:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "infraon-website:build"
+            "buildTarget": "infraon-website:build"
           }
         },
         "test": {
